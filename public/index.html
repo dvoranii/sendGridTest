@@ -8,22 +8,145 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="title">FORM</h1>
-    <div class="form-wrapper">
-      <form action="GET" class="myForm">
-        <label for="fullName" class="fullNameLabel">Full Name: </label>
-        <input type="text" id="fullName" name="fullName" />
-        <label for="email" class="emailLabel">Email: </label>
-        <input type="email" id="email" name="email" />
-        <label for="phone">Phone: </label>
-        <input type="text" name="phone" id="phone" />
-        <label for="message">Message: </label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <button type="submit" id="submitBtn">SUBMIT</button>
-      </form>
-    </div>
-    <a href="./about/">About</a>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+      </head>
+      <body>
+        <nav class="nav">
+          <div class="logo">
+            <a href="../">
+              <img src="/assets/CGL-logo.png" alt="Home" title="Home" />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li class="nav__link">
+              <a href="/" class="nav__link" data-link>Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="./about/" class="nav__link" data-link>About</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" data-link class="transportation-link"
+                >Services&nbsp;▾</a
+              >
+              <ul class="transportation-submenu">
+                <li class="transportation-submenu-wrapper">
+                  <a
+                    href="/services/transportation"
+                    data-link
+                    class="transportation-link"
+                    >Transportation▾</a
+                  >
+                  <ul class="transportation-submenu-a">
+                    <li><a href="/services/transportation/air">Air</a></li>
+                    <li><a href="/services/transportation/ocean">Ocean</a></li>
+                    <li><a href="/services/transportation/truck">Truck</a></li>
+                    <li>
+                      <a href="/services/transportation/warehouse">Warehouse</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/services/sporting-goods" data-link
+                    >Hockey &<br />
+                    Sporting Goods</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__link">
+              <a href="./request/" data-link>Request&nbsp;a&nbsp;Quote</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" class="contact-link">Contact&nbsp;▾</a>
+              <ul class="contact-submenu">
+                <li>
+                  <a href="/contact-on/" data-link>Ontario Office</a>
+                </li>
+                <li>
+                  <a href="/contact-qc" data-link>Quebec Office</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-    <script type="module" src="app.js"></script>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+
+        <div class="home-container">
+          <div class="container">
+            <img class="hero-logo" src="/assets/CGL-logo.png" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+            tenetur corrupti quia maxime itaque libero, atque exercitationem
+            quod officiis quidem dolorum, cupiditate aliquam hic! Cum sed maxime
+            nobis molestiae voluptates.
+          </p>
+        </div>
+        <script type="module" src="app.js"></script>
+      </body>
+    </html>
   </body>
 </html>

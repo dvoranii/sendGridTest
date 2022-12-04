@@ -51,7 +51,7 @@ let msg = {
   from: "ildidvorani@gmail.com",
   subject: "Sending with SendGrid",
   text: "and easy to do anywhere, even with Node.js",
-  html: "<p>Default email template</p>",
+  html: "",
 };
 
 // app.get("/", (req, res) => {
@@ -59,14 +59,16 @@ let msg = {
 // });
 
 // Form submission post request middlware
+// Make another post route at /request-quote
 app.post("/", (req, res) => {
   const { parcel } = req.body;
   console.log(parcel.email);
   res.status(200).send({ status: "received" });
-  msg.html = `<h1>New Title</h1>
+  msg.html = `<h1>Contact Form Submission</h1>
   <p>${parcel.fullName}</p>
   <p>${parcel.email}</p>
   <p>${parcel.phone}</p>
+  <p>${parcel.message}</p>
   `;
 
   sgMail
