@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+.form-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.myForm input {
+  margin: 20px 0px 20px 0px;
+}
