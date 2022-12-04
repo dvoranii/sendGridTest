@@ -2,6 +2,8 @@ const baseUrl = "http://localhost:8000/";
 
 const fullName = document.querySelector("#fullName");
 const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
+const message = document.querySelector("#message");
 const submitBtn = document.querySelector("#submitBtn");
 
 async function getInfo(e) {
@@ -25,7 +27,13 @@ async function postInfo(e) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      parcel: `${fullName.value}\n${email.value}`,
+      //   parcel: `${fullName.value}\n${email.value}`,
+      parcel: {
+        fullName: fullName.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value,
+      },
     }),
   });
 
