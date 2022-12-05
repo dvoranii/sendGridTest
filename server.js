@@ -68,8 +68,7 @@ app.post("/", (req, res) => {
   <p>${parcel.fullName}</p>
   <p>${parcel.email}</p>
   <p>${parcel.phone}</p>
-  <p>${parcel.message}</p>
-  `;
+  <p>${parcel.message}</p>`;
 
   sgMail
     .send(msg)
